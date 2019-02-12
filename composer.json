@@ -1,0 +1,42 @@
+{
+    "name": "webexmachina/contao-slashs-in-url",
+    "description": "Slashs In Urls for Contao Open Source CMS",
+    "keywords": ["url", "slashs", "helper", "alias", "webexmachina", "module", "contao"],
+    "type": "contao-module",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Web ex Machina",
+            "homepage": "https://www.webexmachina.fr",
+            "role":"Developer"
+        }
+    ],
+    "support":{
+        "website":"https://www.webexmachina.fr/",
+        "issues":"https://github.com/Web-Ex-Machina/contao-slashs-in-url/issues",
+        "source":"https://github.com/Web-Ex-Machina/contao-slashs-in-url"
+    },
+    "require": {
+        "php": "^5.6|^7.0",
+        "contao/core-bundle": "^3.2|^4.4",
+        "contao-community-alliance/composer-plugin": "*"
+    },
+    "autoload":{
+        "psr-0": {
+            "WEM\\": [
+                "library/"
+            ]
+        },
+        "classmap": [""]
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "": "system/modules/wem-contao-slashsinurl"
+            },
+            "runonce": [
+                "system/modules/wem-contao-slashsinurl/config/runonce.php"
+            ]
+        }
+    }
+}
