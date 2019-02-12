@@ -13,4 +13,4 @@
  */
 
 if('FE' === TL_MODE)
-	$GLOBALS['TL_HOOKS']['getPageIdFromUrl'][] = array('WEM\SlashInUrls\Hooks', 'checkSubpage');
+	$GLOBALS['TL_HOOKS']['getPageIdFromUrl'][] = array('WEM\SlashsInUrls\Hooks', 'checkSubpage');
